@@ -1,0 +1,107 @@
+/* font face */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+    background-color: aliceblue;
+}
+* {
+  box-sizing: border-box;
+}
+header{
+    background-color: #999999 ;
+    padding :10px;
+   
+    width: 100%;
+    top: 0;
+}
+.judul{
+    text-align: center;
+}
+nav{
+    background-color: aquamarine;
+    padding: 5px;
+    margin-top: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 99%;
+    top: 0;
+   border-radius: 10px;
+}
+nav  ul li{
+  display: inline;
+    margin-left: 10px;
+}
+nav  a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    margin-top: 20px;
+    padding: 20px;
+   
+}
+main{
+ float: left;
+width: 75%;   
+}
+.container > h3{
+    border-bottom-width:3px ;
+    border-bottom:1px solid black;
+}
+.card-post{
+background-color: white;
+padding: 10px;
+
+
+border-radius: 10px;
+box-shadow: 5px 4px 9px -3px rgba(0, 0, 0, 0.8);
+
+}
+aside{
+    
+    float: right;
+    overflow: auto;
+    width: 25%;
+    box-shadow: 5px 4px 9px -3px rgba(0, 0, 0, 0.8);
+}
+.profile{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.profile p {
+    font-size: small;
+}
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+@media screen and (max-width: 600px) {
+  aside{
+    margin-top: 50px;
+    overflow: auto;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 5px 4px 9px -3px rgba(0, 0, 0, 0.8);
+    }
+    
+    main{
+    width: 100%;   
+    }
+    footer{
+        margin-top: 200px;
+        max-height: 80px;
+    }
+    
+
+}
+
+footer{
+    background-color: aquamarine;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    top: 700px;
+    
+
+}
+footer p{
+    text-align: center; 
+}
